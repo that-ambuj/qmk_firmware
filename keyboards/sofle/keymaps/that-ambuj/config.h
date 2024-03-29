@@ -1,0 +1,4 @@
+#define TAPPING_TERM 250
+#define SPLIT_USB_DETECT
+#define NO_ACTION_MACRO
+#define NO_ACTION_FUN
