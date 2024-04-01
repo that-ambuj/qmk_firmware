@@ -4,8 +4,10 @@
 #define SPLIT_USB_DETECT
 #define NO_ACTION_MACRO
 #define NO_ACTION_FUN
+
 #define RETRO_TAPPING
 #define RETRO_SHIFT
+
 #define NO_AUTO_SHIFT_ALPHA
 #define AUTO_SHIFT_TIMEOUT 200
 
