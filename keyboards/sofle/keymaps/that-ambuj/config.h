@@ -1,12 +1,13 @@
 #pragma once
 
-#define TAPPING_TERM 250
 #define SPLIT_USB_DETECT
 #define NO_ACTION_MACRO
 #define NO_ACTION_FUN
 
+#define TAPPING_TERM 220
 #define RETRO_TAPPING
 #define RETRO_SHIFT
+#define PERMISSIVE_HOLD
 
 #define NO_AUTO_SHIFT_ALPHA
 #define AUTO_SHIFT_TIMEOUT 200
