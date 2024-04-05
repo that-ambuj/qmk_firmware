@@ -93,7 +93,7 @@ bool oled_task_user(void) {
 
 #ifdef ENCODER_MAP_ENABLE
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
-    [0] = { ENCODER_CCW_CW(KC_VOLU, KC_VOLD),           ENCODER_CCW_CW(KC_MS_WH_DOWN, KC_MS_WH_UP) },
+    [0] = { ENCODER_CCW_CW(C(KC_PGDN), C(KC_PGUP)),           ENCODER_CCW_CW(KC_MS_WH_DOWN, KC_MS_WH_UP) },
     [1] = { ENCODER_CCW_CW(_______, _______),           ENCODER_CCW_CW(_______, _______) },
     [2] = { ENCODER_CCW_CW(RGB_HUD, RGB_HUI),           ENCODER_CCW_CW(KC_WWW_FORWARD, KC_WWW_BACK) },
     [3] = { ENCODER_CCW_CW(RGB_VAD, RGB_VAI),           ENCODER_CCW_CW(RGB_RMOD, RGB_MOD)}
@@ -118,11 +118,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 
 [0] = LAYOUT(
-  KC_GRV,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                     KC_6,    KC_7,    KC_8,    KC_9,    KC_0,  KC_GRV,
-  KC_ESC,   KC_Q,   KC_W,    KC_E,    KC_R,    KC_T,                     KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,  KC_BSPC,
-  LCTL_T(KC_TAB),   KC_A,    KC_S,    LGUI_T(KC_D),    KC_F,    KC_G,                     KC_H,     KC_J,     KC_K,    KC_L, KC_SCLN,  KC_QUOT,
-  KC_LSFT,  KC_Z,   KC_X,    KC_C,    KC_V,    KC_B, KC_MUTE,     KC_HOME,  KC_N,  KC_M, KC_COMM,  KC_DOT, KC_SLSH,  KC_RSFT,
-                 KC_LGUI,KC_LALT,KC_LCTL, MO(2), KC_ENT,      RGUI_T(KC_SPC),  MO(3), KC_RCTL, KC_RALT, KC_RGUI
+  KC_GRV,   KC_1,           KC_2,           KC_3,               KC_4,           KC_5,                   KC_6,    KC_7,      KC_8,    KC_9,    KC_0,  KC_GRV,
+  KC_ESC,   KC_Q,           KC_W,           KC_E,               KC_R,           KC_T,                   KC_Y,    KC_U,      KC_I,    KC_O,    KC_P,  KC_BSPC,
+  KC_TAB,   LCTL_T(KC_A),   LALT_T(KC_S),   LGUI_T(KC_D),       LSFT_T(KC_F),   KC_G,                   KC_H,    RSFT_T(KC_J),      RGUI_T(KC_K),  LALT_T(KC_L), RCTL_T(KC_SCLN),  KC_QUOT,
+  KC_LSFT,  KC_Z,   KC_X,    KC_C,    KC_V,    KC_B, KC_MUTE,                                   KC_HOME,  KC_N,  KC_M, KC_COMM,  KC_DOT, KC_SLSH,  KC_RSFT,
+                 KC_LGUI,KC_LALT,KC_LCTL, MO(2), KC_ENT,                                        KC_SPC,  MO(3), KC_RCTL, KC_RALT, KC_RGUI
 ),
 /*
  * COLEMAK
@@ -176,7 +176,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * | Tab  | LAt  | LCtl |LShift|      | Caps |-------.    ,-------| Left | Down |  Up  | Right |  Del | Bspc |
  * |------+------+------+------+------+------|  MUTE  |   |       |------+------+------+------+------+------|
- * |Shift | Undo |  Cut | Copy | Paste|      |--------|   |-------| PgDn | LStr |      | LEnd |      | Shift|
+ * |Shift | Undo |  Cut | Copy | Paste|      |--------|   |-------| PgDn | Home |      | End |      | Shift|
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *            | LGUI | LAlt | LCTR |LOWER | /Enter  /       \Space \  |RAISE | RCTR | RAlt | RGUI |
  *            |      |      |      |      |/       /         \      \ |      |      |      |      |
@@ -186,7 +186,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   TO(0), TO(1) , _______ , _______ , _______ , _______,                           _______,  _______  ,  DT_PRNT ,  DT_DOWN , DT_UP , _______,
   _______,  KC_INS,  KC_PSCR,   KC_APP,  QK_SWAP_HANDS_TOGGLE, QK_BOOT,             KC_PGUP, QK_CAPS_WORD_TOGGLE, AS_RPT, AS_DOWN, AS_UP, KC_BSPC,
   _______, KC_LCTL, KC_LALT,    KC_LGUI,    KC_LSFT,     KC_CAPS,                       KC_LEFT, KC_DOWN, KC_UP, KC_RGHT,  KC_DEL, KC_BSPC,
-  _______,KC_UNDO, KC_CUT, KC_COPY, KC_PASTE, XXXXXXX,  QK_CLEAR_EEPROM,       _______,  KC_PGDN, _______, XXXXXXX, _______,   XXXXXXX, _______,
+  _______,KC_UNDO, KC_CUT, KC_COPY, KC_PASTE, XXXXXXX,  QK_CLEAR_EEPROM,       _______,  KC_PGDN, KC_HOME, XXXXXXX, KC_END,   XXXXXXX, _______,
                          _______, _______, _______, _______, _______,       _______, _______, _______, _______, _______
 ),
 };
