@@ -4,7 +4,7 @@
 #define NO_ACTION_MACRO
 #define NO_ACTION_FUN
 
-#define TAPPING_TERM 220
+#define TAPPING_TERM 210
 #define RETRO_TAPPING
 #define RETRO_SHIFT
 #define PERMISSIVE_HOLD
