@@ -93,10 +93,10 @@ bool oled_task_user(void) {
 
 #ifdef ENCODER_MAP_ENABLE
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
-    [0] = { ENCODER_CCW_CW(C(KC_PGDN), C(KC_PGUP)),           ENCODER_CCW_CW(KC_MS_WH_DOWN, KC_MS_WH_UP) },
+    [0] = { ENCODER_CCW_CW(KC_VOLU, KC_VOLD),           ENCODER_CCW_CW(KC_MS_WH_DOWN, KC_MS_WH_UP) },
     [1] = { ENCODER_CCW_CW(_______, _______),           ENCODER_CCW_CW(_______, _______) },
-    [2] = { ENCODER_CCW_CW(RGB_HUD, RGB_HUI),           ENCODER_CCW_CW(KC_WWW_FORWARD, KC_WWW_BACK) },
-    [3] = { ENCODER_CCW_CW(RGB_VAD, RGB_VAI),           ENCODER_CCW_CW(RGB_RMOD, RGB_MOD)}
+    [2] = { ENCODER_CCW_CW(RGB_HUD, RGB_HUI),           ENCODER_CCW_CW(C(KC_PGDN), C(KC_PGUP)) },
+    [3] = { ENCODER_CCW_CW(KC_MNXT, KC_MPRV),           ENCODER_CCW_CW(RGB_RMOD, RGB_MOD)}
 };
 #endif
 
@@ -165,7 +165,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   _______,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                       KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,
   KC_GRV,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                       KC_6,    KC_7,    KC_8,    KC_9,    KC_0,  KC_F12,
   _______, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,                       KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_PIPE,
-  _______,  KC_EQL, KC_MINS, KC_PLUS, KC_LCBR, KC_RCBR, _______,       KC_WWW_REFRESH, KC_LBRC, KC_RBRC, KC_UNDS, KC_COLN, KC_BSLS, _______,
+  _______,  KC_EQL, KC_MINS, KC_PLUS, KC_LCBR, KC_RCBR, _______,       C(KC_W), KC_LBRC, KC_RBRC, KC_UNDS, KC_COLN, KC_BSLS, _______,
                        _______, _______, _______, _______, _______,       _______, _______, _______, _______, _______
 ),
 /* RAISE
@@ -186,7 +186,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   TO(0), TO(1) , _______ , _______ , _______ , _______,                           _______,  _______  ,  DT_PRNT ,  DT_DOWN , DT_UP , _______,
   _______,  KC_INS,  KC_PSCR,   KC_APP,  QK_SWAP_HANDS_TOGGLE, QK_BOOT,             KC_PGUP, QK_CAPS_WORD_TOGGLE, AS_RPT, AS_DOWN, AS_UP, KC_BSPC,
   _______, KC_LCTL, KC_LALT,    KC_LGUI,    KC_LSFT,     KC_CAPS,                       KC_LEFT, KC_DOWN, KC_UP, KC_RGHT,  KC_DEL, KC_BSPC,
-  _______,KC_UNDO, KC_CUT, KC_COPY, KC_PASTE, XXXXXXX,  QK_CLEAR_EEPROM,       _______,  KC_PGDN, KC_HOME, XXXXXXX, KC_END,   XXXXXXX, _______,
+  _______,KC_UNDO, KC_CUT, KC_COPY, KC_PASTE, QK_CLEAR_EEPROM,  KC_MPLY,       _______,  KC_PGDN, KC_HOME, XXXXXXX, KC_END,   XXXXXXX, _______,
                          _______, _______, _______, _______, _______,       _______, _______, _______, _______, _______
 ),
 };
