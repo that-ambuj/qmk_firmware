@@ -1,10 +1,10 @@
 #pragma once
 
-#define SPLIT_USB_DETECT
 #define NO_ACTION_MACRO
 #define NO_ACTION_FUN
+#define EE_HANDS
 
-#define TAPPING_TERM 210
+#define TAPPING_TERM 190
 #define RETRO_TAPPING
 #define RETRO_SHIFT
 #define PERMISSIVE_HOLD
