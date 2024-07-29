@@ -5,9 +5,11 @@
 #define EE_HANDS
 
 #define TAPPING_TERM 190
-// #define RETRO_TAPPING
-// #define RETRO_SHIFT
 #define PERMISSIVE_HOLD
+#define RETRO_TAPPING
+
+// Neutralize long hold of Alt and GUI keys
+#define DUMMY_MOD_NEUTRALIZER_KEYCODE KC_RIGHT_CTRL
 
 #define NO_AUTO_SHIFT_ALPHA
 #define AUTO_SHIFT_TIMEOUT 200
