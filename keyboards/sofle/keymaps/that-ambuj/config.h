@@ -5,8 +5,8 @@
 #define EE_HANDS
 
 #define TAPPING_TERM 190
-#define RETRO_TAPPING
-#define RETRO_SHIFT
+// #define RETRO_TAPPING
+// #define RETRO_SHIFT
 #define PERMISSIVE_HOLD
 
 #define NO_AUTO_SHIFT_ALPHA
