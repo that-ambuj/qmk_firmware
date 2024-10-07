@@ -93,7 +93,7 @@ bool oled_task_user(void) {
 
 #ifdef ENCODER_MAP_ENABLE
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
-    [0] = { ENCODER_CCW_CW(KC_VOLU, KC_VOLD),           ENCODER_CCW_CW(KC_MS_WH_DOWN, KC_MS_WH_UP) },
+    [0] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU),           ENCODER_CCW_CW(KC_MS_WH_DOWN, KC_MS_WH_UP) },
     [1] = { ENCODER_CCW_CW(_______, _______),           ENCODER_CCW_CW(_______, _______) },
     [2] = { ENCODER_CCW_CW(RGB_HUD, RGB_HUI),           ENCODER_CCW_CW(C(KC_PGDN), C(KC_PGUP)) },
     [3] = { ENCODER_CCW_CW(KC_MNXT, KC_MPRV),           ENCODER_CCW_CW(RGB_RMOD, RGB_MOD)}
