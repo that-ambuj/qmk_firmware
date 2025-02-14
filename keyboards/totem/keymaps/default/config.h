@@ -13,7 +13,7 @@ for more options.
 #define DYNAMIC_KEYMAP_LAYER_COUNT 5
 
 //#define TAPPING_TERM 170
-#define TAPPING_TERM 180
+#define TAPPING_TERM 150
 #define PERMISSIVE_HOLD
 #define RETRO_TAPPING
 
