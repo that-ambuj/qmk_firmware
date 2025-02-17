@@ -14,7 +14,6 @@ for more options.
 
 //#define TAPPING_TERM 170
 #define TAPPING_TERM 150
-#define PERMISSIVE_HOLD
 #define RETRO_TAPPING
 
 // Neutralize long hold of Alt and GUI keys
