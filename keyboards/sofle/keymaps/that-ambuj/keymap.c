@@ -37,13 +37,6 @@ static void render_logo(void) {
     oled_write_P(qmk_logo, false);
 }
 
-static inline void print_wpm(void) {
-    oled_write("WPM:\n\n", false);
-
-    sprintf(wpm_str, "%03d", get_current_wpm());
-
-    oled_write_ln(wpm_str, false);
-}
 
 void print_status_narrow(void) {
     oled_write_P(PSTR("\n\n"), false);
@@ -75,8 +68,6 @@ void print_status_narrow(void) {
             oled_write_ln_P(PSTR("Undef"), false);
     }
     oled_write_P(PSTR("\n\n"), false);
-
-    print_wpm();
 }
 
 
