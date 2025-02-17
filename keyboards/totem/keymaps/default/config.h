@@ -12,8 +12,8 @@ for more options.
 
 #define DYNAMIC_KEYMAP_LAYER_COUNT 5
 
-//#define TAPPING_TERM 170
-#define TAPPING_TERM 150
+#define TAPPING_TERM 160
+#define PERMISSIVE_HOLD_PER_KEY
 #define RETRO_TAPPING
 
 // Neutralize long hold of Alt and GUI keys
