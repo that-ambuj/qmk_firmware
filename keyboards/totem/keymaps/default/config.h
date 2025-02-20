@@ -14,7 +14,6 @@ for more options.
 
 #define TAPPING_TERM 160
 #define PERMISSIVE_HOLD_PER_KEY
-#define RETRO_TAPPING
 
 // Neutralize long hold of Alt and GUI keys
 #define DUMMY_MOD_NEUTRALIZER_KEYCODE KC_RIGHT_CTRL
