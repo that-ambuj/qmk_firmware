@@ -130,7 +130,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
              ├─────────┼─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┼─────────┤
              │    A    │    R    │    S    │    T    │    D    ││    H    │    N    │    E    │    I    │    O    │
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
-   │    Q    │    Z    │    X    │    C    │    V    │    B    ││    K    │    M    │    ,    │    .    │    /    │    ;    │
+   │    `    │    Z    │    X    │    C    │    V    │    B    ││    K    │    M    │    ,    │    .    │    /    │    '    │
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
                                  │   DEL   │  LOWER  │  SPACE  ││  ENTER  │  RAISE  │  BSPC   │
                                  └─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┘*/
@@ -139,8 +139,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  //╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷
               KC_Q,     KC_W,     KC_F,     KC_P,     KC_G,      KC_J,     KC_L,     KC_U,     KC_Y,     KC_SCLN,
               ALT_A,    GUI_R,    CTL_S,    SHT_T,    KC_D,      KC_H,     SHT_N,    CTL_E,    GUI_I,    ALT_O,
-    KC_Q,     KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,      KC_K,     KC_M,     KC_COMM,  KC_DOT,   KC_SLSH,  KC_SCLN,
-                                  KC_DEL,   LOWER,    KC_SPC,    KC_ENT,   RAISE,    KC_BSPC
+    SHT_GRV,  KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,      KC_K,     KC_M,     KC_COMM,  KC_DOT,   KC_SLSH,  KC_QUOT,
+                                  KC_DEL,   LOWER,    KC_ENT,    KC_SPC,   RAISE,    KC_BSPC
  ),
 
  /*
@@ -177,7 +177,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
              ├─────────┼─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┼─────────┤
              │    F11  │    F12  │  PREV   │  PAUSE  │  NEXT   ││  LEFT   │  DOWN   │   UP    │  RIGHT  │  HOME   │
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
-   │         │         │ PrntScr │   VOL-  │  MUTE   │   VOL+  ││         │         │         │ DM REC1 │ DM STOP │ DM PLY1 │
+   │CAPS_WORD│         │ PrntScr │   VOL-  │  MUTE   │   VOL+  ││         │         │         │ DM REC1 │ DM STOP │ DM PLY1 │
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┤├─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
                                  │    ▼    │ ADJUST  │    ▼    ││    ▼    │    ▼    │    ▼    │
                                  └─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┘ */
@@ -186,7 +186,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  //╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷
             KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,              KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,
             KC_F11,  KC_F12,  KC_MPRV, KC_MPLY, KC_MNXT,            KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT,KC_HOME,
-  XXXXXXX,  XXXXXXX, KC_PSCR, KC_VOLD, KC_MUTE, KC_VOLU,   XXXXXXX,  XXXXXXX,  XXXXXXX,  DM_REC1,  DM_RSTP,  DM_PLY1,
+  CW_TOGG,  XXXXXXX, KC_PSCR, KC_VOLD, KC_MUTE, KC_VOLU,   XXXXXXX,  XXXXXXX,  XXXXXXX,  DM_REC1,  DM_RSTP,  DM_PLY1,
                                   _______,   ADJUST,   _______,   _______,  _______,  _______
  ),
  /*
