@@ -53,8 +53,8 @@ enum custom_keycodes {
 
 // LEFT HAND HOME ROW MODS QWERTY ├──────────────────┐
 
-#define GUI_A MT(MOD_LGUI, KC_A)
-#define ALT_S MT(MOD_LALT, KC_S)
+#define ALT_A MT(MOD_LALT, KC_A)
+#define GUI_S MT(MOD_LGUI, KC_S)
 #define CTL_D MT(MOD_LCTL, KC_D)
 #define SHT_F MT(MOD_LSFT, KC_F)
 #define SHT_GRV MT(MOD_LSFT, KC_GRV)
@@ -63,14 +63,14 @@ enum custom_keycodes {
 
 #define SHT_J MT(MOD_RSFT, KC_J)
 #define CTL_K MT(MOD_LCTL, KC_K)
-#define ALT_L MT(MOD_LALT, KC_L)
-#define GUI_S MT(MOD_LGUI, KC_SCLN)
+#define GUI_L MT(MOD_LGUI, KC_L)
+#define ALT_SC MT(MOD_LALT, KC_SCLN)
 
 
 // LEFT HAND HOME ROW MODS COLEMAK ├─────────────────┐
 
-#define GUI_A MT(MOD_LGUI, KC_A)
-#define ALT_R MT(MOD_LALT, KC_R)
+#define ALT_A MT(MOD_LALT, KC_A)
+#define GUI_R MT(MOD_LGUI, KC_R)
 #define CTL_S MT(MOD_LCTL, KC_S)
 #define SHT_T MT(MOD_LSFT, KC_T)
 
@@ -78,8 +78,8 @@ enum custom_keycodes {
 
 #define SHT_N MT(MOD_RSFT, KC_N)
 #define CTL_E MT(MOD_LCTL, KC_E)
-#define ALT_I MT(MOD_LALT, KC_I)
-#define GUI_O MT(MOD_LGUI, KC_O)
+#define GUI_I MT(MOD_LGUI, KC_I)
+#define ALT_O MT(MOD_LALT, KC_O)
 
 
 
@@ -113,7 +113,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    [_QWERTY] = LAYOUT(
  //╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷
               KC_Q,     KC_W,     KC_E,     KC_R,     KC_T,      KC_Y,     KC_U,     KC_I,     KC_O,     KC_P,
-              GUI_A,    ALT_S,    CTL_D,    SHT_F,    KC_G,      KC_H,     SHT_J,    CTL_K,    ALT_L,    GUI_S,
+              ALT_A,    GUI_S,    CTL_D,    SHT_F,    KC_G,      KC_H,     SHT_J,    CTL_K,    GUI_L,    ALT_SC,
     SHT_GRV,  KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,      KC_N,     KC_M,     KC_COMM,  KC_DOT,   KC_SLSH,  KC_QUOT,
                                   KC_DEL,   LOWER,    KC_ENT,    KC_SPC,   RAISE,    KC_BSPC
  ),
@@ -138,7 +138,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    [_COLEMAK] = LAYOUT(
  //╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷
               KC_Q,     KC_W,     KC_F,     KC_P,     KC_G,      KC_J,     KC_L,     KC_U,     KC_Y,     KC_SCLN,
-              GUI_A,    ALT_R,    CTL_S,    SHT_T,    KC_D,      KC_H,     SHT_N,    CTL_E,    ALT_I,    GUI_O,
+              ALT_A,    GUI_R,    CTL_S,    SHT_T,    KC_D,      KC_H,     SHT_N,    CTL_E,    GUI_I,    ALT_O,
     KC_Q,     KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,      KC_K,     KC_M,     KC_COMM,  KC_DOT,   KC_SLSH,  KC_SCLN,
                                   KC_DEL,   LOWER,    KC_SPC,    KC_ENT,   RAISE,    KC_BSPC
  ),
