@@ -4,9 +4,8 @@
 #define NO_ACTION_FUN
 #define EE_HANDS
 
-#define TAPPING_TERM 190
-#define PERMISSIVE_HOLD
-#define RETRO_TAPPING
+#define TAPPING_TERM 180
+#define PERMISSIVE_HOLD_PER_KEY
 
 // Neutralize long hold of Alt and GUI keys
 #define DUMMY_MOD_NEUTRALIZER_KEYCODE KC_RIGHT_CTRL
@@ -19,3 +18,5 @@
 
 #define ENCODER_RESOLUTIONS { 6 }
 #define ENCODER_RESOLUTIONS_RIGHT { 3 }
+
+#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
