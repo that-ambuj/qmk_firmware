@@ -10,13 +10,22 @@
 // Neutralize long hold of Alt and GUI keys
 #define DUMMY_MOD_NEUTRALIZER_KEYCODE KC_RIGHT_CTRL
 
-#define NO_AUTO_SHIFT_ALPHA
-#define AUTO_SHIFT_TIMEOUT 200
+// #define NO_AUTO_SHIFT_ALPHA
+// #define AUTO_SHIFT_TIMEOUT 200
 
-#define WPM_SAMPLE_SECONDS 5
-#define WPM_LAUNCH_CONTROL
+// #define WPM_SAMPLE_SECONDS 5
+// #define WPM_LAUNCH_CONTROL
 
 #define ENCODER_RESOLUTIONS { 6 }
 #define ENCODER_RESOLUTIONS_RIGHT { 3 }
 
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+
+// gaming related stuff
+#define DEBOUNCE 5
+#define DEBOUNCE_TYPE asym_eager_defer_pk
+// 1000 hz polling rate
+#define USB_POLLING_INTERVAL_MS 1
+// #define QMK_KEYS_PER_SCAN 12
+
+#define NKRO_DEFAULT_ON true

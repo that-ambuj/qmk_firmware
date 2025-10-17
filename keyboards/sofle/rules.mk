@@ -1,2 +1,2 @@
 DEFAULT_FOLDER = sofle/rev1
-WPM_ENABLE = yes
+WPM_ENABLE = no
